@@ -1,0 +1,21 @@
+.suppliers-page { min-width: 0; }
+.suppliers-page__header { align-items: flex-end; }
+.suppliers-page__subtitle { margin-top: 8px; color: var(--color-text-soft); font-size: .84rem; }
+.suppliers-page__actions { flex-wrap: wrap; }
+.suppliers-page__notice { font-size: .76rem; line-height: 1.55; }
+.suppliers-workspace { min-width: 0; padding: 0; overflow: hidden; }
+.suppliers-workspace__heading { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 18px 18px 14px; }
+.suppliers-workspace__heading h2 { font-size: 1.15rem; }
+.suppliers-result-count { color: var(--color-text-soft); font-size: .75rem; white-space: nowrap; }
+.suppliers-toolbar { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 10px; padding: 0 18px 16px; }
+.suppliers-search { display: flex; align-items: center; gap: 9px; flex: 1 1 230px; min-width: 190px; height: 40px; padding: 0 11px; border: 1px solid var(--color-border); border-radius: 10px; color: var(--color-text-soft); background: var(--color-surface-alt); }
+.suppliers-search input { min-width: 0; outline: 0; background: transparent; font-size: .78rem; }
+.suppliers-search input::placeholder { color: var(--color-text-soft); }
+.suppliers-filter { display: flex; flex-direction: column; gap: 4px; min-width: 138px; }
+.suppliers-filter > span { color: var(--color-text-soft); font-size: .66rem; font-weight: 600; }
+.suppliers-filter select { width: 100%; height: 40px; padding: 0 30px 0 10px; border: 1px solid var(--color-border); border-radius: 10px; color: var(--color-text); background: var(--color-surface); font: inherit; font-size: .76rem; }
+.suppliers-filter--sort { min-width: 155px; }
+.suppliers-reset { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 8px; color: var(--color-primary-deep); font-size: .75rem; font-weight: 650; white-space: nowrap; }
+@media (max-width: 1050px) { .supplier-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .suppliers-page__header { align-items: flex-start; } .suppliers-page__actions { width: 100%; } .suppliers-page__actions .btn { flex: 1; } .suppliers-toolbar { align-items: stretch; } .suppliers-search { flex-basis: 100%; } .suppliers-filter { flex: 1 1 42%; min-width: 125px; } .suppliers-filter--sort { min-width: 125px; } }
+@media (max-width: 420px) { .suppliers-workspace__heading { align-items: flex-start; flex-direction: column; } .suppliers-result-count { white-space: normal; } .suppliers-page__actions .btn { min-width: 0; padding-inline: 10px; font-size: .76rem; } .supplier-summary { gap: 9px; } }

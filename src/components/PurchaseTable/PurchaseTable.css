@@ -1,0 +1,16 @@
+.purchase-table-scroll { width: 100%; overflow-x: auto; }
+.purchase-table { min-width: 1040px; }
+.purchase-table th { white-space: nowrap; }
+.purchase-table td { vertical-align: middle; font-size: .81rem; }
+.purchase-table__number { display: block; color: var(--color-text); font-size: .79rem; }
+.purchase-table td small { display: block; margin-top: 3px; color: var(--color-text-soft); font-size: .68rem; }
+.purchase-table td > span:not(.purchase-status) { color: var(--color-text-soft); }
+.purchase-status { display: inline-flex; padding: 5px 8px; border-radius: 999px; white-space: nowrap; font-size: .67rem; font-weight: 700; }
+.purchase-status--pending { color: var(--color-warning); background: var(--color-warning-soft); }
+.purchase-status--transit { color: #8bb9eb; background: rgba(63, 123, 187, .14); }
+.purchase-status--received { color: var(--color-success); background: var(--color-success-soft); }
+.purchase-status--draft { color: var(--color-text-soft); background: var(--color-surface-alt); }
+.purchase-table__view { display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid var(--color-border); border-radius: 8px; color: var(--color-text-soft); background: var(--color-surface-alt); }
+.purchase-table__view:hover { color: var(--color-primary-deep); border-color: var(--color-primary); }
+.purchase-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 220px; gap: 7px; padding: 24px; color: var(--color-text-soft); text-align: center; }
+.purchase-empty strong { color: var(--color-text); }

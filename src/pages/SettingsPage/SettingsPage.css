@@ -1,0 +1,33 @@
+.settings-page { min-width: 0; }
+.settings-page__subtitle { margin-top: 8px; color: var(--color-text-soft); font-size: .84rem; }
+.settings-demo-notice { font-size: .76rem; line-height: 1.55; }
+.settings-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); align-items: start; gap: 18px; }
+.settings-tabs { display: flex; flex-direction: column; gap: 5px; }
+.settings-tab { display: flex; align-items: center; gap: 10px; min-height: 42px; padding: 0 12px; border-radius: 10px; color: var(--color-text-soft); text-align: left; font-size: .8rem; }
+.settings-tab:hover { color: var(--color-text); background: var(--color-surface-alt); }
+.settings-tab--active { color: var(--color-primary-deep); background: var(--color-primary-soft); font-weight: 650; }
+.settings-content { min-width: 0; }
+.settings-panel { padding: 20px; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); box-shadow: var(--shadow-soft); }
+.settings-panel__heading { display: flex; justify-content: space-between; gap: 14px; padding-bottom: 18px; border-bottom: 1px solid var(--color-border); color: var(--color-text-soft); }
+.settings-panel__heading h2 { margin-top: 3px; color: var(--color-text); font-size: 1.08rem; }
+.settings-panel__heading p:not(.eyebrow) { margin-top: 5px; font-size: .74rem; }
+.settings-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 70px; padding: 13px 0; border-bottom: 1px solid var(--color-border); }
+.settings-row > div:first-child { display: flex; flex-direction: column; gap: 4px; }
+.settings-row strong { font-size: .79rem; }
+.settings-row small { color: var(--color-text-soft); font-size: .69rem; }
+.settings-value { color: var(--color-text); font-size: .76rem; text-align: right; }
+.theme-choice { display: flex; gap: 4px; padding: 3px; border: 1px solid var(--color-border); border-radius: 10px; background: var(--color-surface-alt); }
+.theme-choice button { display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 7px; color: var(--color-text-soft); font-size: .72rem; }
+.theme-choice button.theme-choice__active { color: var(--color-primary-deep); background: var(--color-surface); box-shadow: var(--shadow-soft); }
+.settings-status { display: inline-flex; align-items: center; gap: 6px; padding: 5px 8px; border-radius: 999px; white-space: nowrap; font-size: .66rem; font-weight: 650; }
+.settings-status--demo { color: var(--color-warning); background: var(--color-warning-soft); }
+.settings-status--offline { color: var(--color-text-soft); background: var(--color-surface-alt); }
+.settings-panel__footer { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; padding-top: 16px; color: var(--color-text-soft); font-size: .71rem; }
+.settings-signout, .settings-link { margin-left: auto; color: var(--color-primary-deep); font-size: .73rem; font-weight: 650; }
+.connection-row { display: flex; align-items: center; gap: 12px; min-height: 76px; padding: 13px 0; border-bottom: 1px solid var(--color-border); }
+.connection-row__icon { display: grid; place-items: center; width: 34px; height: 34px; flex: 0 0 34px; border-radius: 9px; color: var(--color-text-soft); background: var(--color-surface-alt); }
+.connection-row > div { display: flex; flex-direction: column; flex: 1; min-width: 0; gap: 4px; }
+.connection-row strong { font-size: .78rem; }
+.connection-row small { color: var(--color-text-soft); font-size: .68rem; }
+@media (max-width: 760px) { .settings-layout { grid-template-columns: 1fr; gap: 12px; } .settings-tabs { flex-direction: row; overflow-x: auto; border-bottom: 1px solid var(--color-border); } .settings-tab { flex: 0 0 auto; } }
+@media (max-width: 520px) { .settings-panel { padding: 15px; } .settings-row { align-items: flex-start; flex-direction: column; gap: 9px; } .settings-value { text-align: left; } .connection-row { align-items: flex-start; flex-wrap: wrap; } .connection-row > div { flex-basis: calc(100% - 50px); } .connection-row > .settings-status { margin-left: 46px; } .settings-panel__footer { align-items: flex-start; } .settings-signout, .settings-link { margin-left: 0; } }

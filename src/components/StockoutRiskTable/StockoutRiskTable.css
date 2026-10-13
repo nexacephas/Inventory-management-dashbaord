@@ -1,0 +1,6 @@
+.stock-risk-table__meta { display: block; margin-top: 3px; color: var(--color-text-soft); font-size: .68rem; }
+.threshold-state { display: inline-flex; padding: 5px 8px; border-radius: 999px; white-space: nowrap; font-size: .67rem; font-weight: 700; }
+.threshold-state--below { color: var(--color-warning); background: var(--color-warning-soft); }
+.threshold-state--out { color: var(--color-danger); background: var(--color-danger-soft); }
+.table-card { min-width: 0; overflow: hidden; }
+.table-card .table-wrap { margin-top: 2px; }

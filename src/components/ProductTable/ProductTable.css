@@ -1,0 +1,13 @@
+.product-table-scroll { width: 100%; overflow-x: auto; }
+.product-table { min-width: 1040px; }
+.product-table th { white-space: nowrap; }
+.product-table td { vertical-align: middle; font-size: .81rem; }
+.product-table__name { display: block; color: var(--color-text); font-weight: 650; }
+.product-table__sku { display: block; margin-top: 3px; color: var(--color-text-soft); font-size: .68rem; }
+.product-status { display: inline-flex; padding: 5px 8px; border-radius: 999px; font-size: .67rem; font-weight: 700; }
+.product-status--active { color: var(--color-success); background: var(--color-success-soft); }
+.product-status--inactive { color: var(--color-text-soft); background: var(--color-surface-alt); }
+.product-table__view { display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid var(--color-border); border-radius: 8px; color: var(--color-text-soft); background: var(--color-surface-alt); }
+.product-table__view:hover { color: var(--color-primary-deep); border-color: var(--color-primary); }
+.product-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 220px; gap: 7px; padding: 24px; color: var(--color-text-soft); text-align: center; }
+.product-empty strong { color: var(--color-text); }
